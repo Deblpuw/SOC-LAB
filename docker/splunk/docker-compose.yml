@@ -1,0 +1,11 @@
+﻿version: '3'
+services:
+  splunk:
+    image: splunk/splunk:latest
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_USERNAME=admin
+      - SPLUNK_PASSWORD=Changeme123!
+    ports:
+      - '8000:8000'
+      - '8088:8088'

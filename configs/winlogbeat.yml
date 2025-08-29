@@ -1,0 +1,2 @@
+﻿winlogbeat.event_logs:
+  - name: Security
